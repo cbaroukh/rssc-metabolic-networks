@@ -4,8 +4,7 @@ import os as os
 ##################
 ## inputs
 
-filename = 'input/rsol.xlsx'
-#filename = 'input/rsol_time.xlsx'
+filename = 'input/rsol_time.xlsx'
 
 datasheet = 0 #WT
 #datasheet = 1 #PhcA

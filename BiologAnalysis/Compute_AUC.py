@@ -8,6 +8,7 @@ filename = 'input/rsol_time.xlsx'
 datasheet = 0 #WT
 #datasheet = 1 #PhcA
 #datasheet = 2 #WT_PhcA
+#datasheet = 3
 
 plates_to_plot = ['PM 1-', 'PM 2-A', 'PM 3-B']
 

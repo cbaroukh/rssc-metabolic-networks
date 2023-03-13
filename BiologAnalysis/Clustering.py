@@ -4,8 +4,20 @@ import os as os
 
 #########################
 ###########Parameters
-filename = 'output/A/rsol_WT_AsPM 1-.xlsx'
+#filename = 'output/A/rsol_WT_AsPM 1-.xlsx'
+#filename = 'output/A/rsol_WT_AsPM 2-A.xlsx'
+#filename = 'output/A/rsol_WT_AsPM 3-B.xlsx'
+#filename = 'output/A/rsol_phcA_AsPM 1-.xlsx'
+#filename = 'output/A/rsol_phcA_AsPM 2-A.xlsx'
+#filename = 'output/A/rsol_phcA_AsPM 3-B.xlsx'
+filename = 'output/A/rsol_WT_AsPM 123.xlsx'
+
 #filename = 'output/AUC/rsol_time_WT_AUCsPM 1-.xlsx'
+#filename = 'output/AUC/rsol_time_WT_AUCsPM 2-A.xlsx'
+#filename = 'output/AUC/rsol_time_WT_AUCsPM 3-B.xlsx'
+#filename = 'output/AUC/rsol_time_phcA_AUCsPM 1-.xlsx'
+#filename = 'output/AUC/rsol_time_phcA_AUCsPM 2-A.xlsx'
+#filename = 'output/AUC/rsol_time_phcA_AUCsPM 3-B.xlsx'
 
 datasheet = 0
 
