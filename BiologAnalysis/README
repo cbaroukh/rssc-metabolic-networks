@@ -54,10 +54,13 @@ The output filename will have as name the name of the data file and the datashee
 
 #Clustering
 Cluster under the form of a heatmap using data from AUC or A folder.
-The output filename is the same name as the imput filename.
+The output filename is the same name as the input filename.
 
 #GrowthorNoGrowth
 Compute whether there is growth or not for each well of each Biolog PM plates.
-The output filename is the same name as the imput filename.
+The output filename is the same name as the input filename.
 
+#PCA
+Perform PCA analysis on data from AUC or A folder.
+The output filename is the same name as the input filename.
 
