@@ -1,0 +1,44 @@
+#BiologAnalysis folder
+
+Scripts were runned using python and the following versions of the librairies:
+- python 3.6
+- pandas
+- matplotlib
+- os
+- openpyxl
+
+
+#folder input:
+Contains Biolog data and metadata.
+- PMs_Map.xlsx: a list of all substrates for all PMs Biolog plates.
+- rsol_metadata: metadata for strains presents in rsol.xlsx and rsol_metadata.xlsx
+- rsol.xlsx: all Biolog data normalized by the negative control A1 well (normalisation performed by Biolog software).
+             first datasheet contains all WT data
+             second datasheet contains all phcA data
+             third datasheet contains phcA data and the WT counterpart
+- rsol_time.xlsx: all Biolog data normalized by the negative control A1 well as well as by time (67h ou 96h).
+                  first datasheet contains all WT data
+                  second datasheet contains all phcA data
+                  third datasheet contains phcA data and the WT counterpart
+
+#folder output:
+Contains all outputs of python scripts
+- A: maximal intensity reached for each well of each Biolog PM plate
+- AUC: area under the curve reached for each well of each Biolog PM plate
+- Growth: excel sheets analyzing automatically if there is growth or not for each well of each Biolog PM plate
+- HeatMap: clustering of data under the form of heatmaps
+- Images: plots of Biolog PM plate time course data row by row
+- PCA: PCA analysis of data
+
+#plotDataByRow.py
+Plots each Biolog PM well time course data.
+To run the script, choose data file and datasheet in this file.
+Images are present in the output folder output/Images/.
+The output folder will have as name the name of the data file and the datasheet.
+
+#Compute_A
+Compute maximal intensity A for each well of each Biolog PM plate.
+Maximal intensity A is the mean of the 10 largest values reach in each well.
+To run the script, choose data file and datasheet in this file.
+Results are given in an Excel sheet in the output folder output/A/
+The filename will have as name the name of the data file and the datasheet.
