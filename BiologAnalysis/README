@@ -7,6 +7,7 @@ Scripts were runned using python and the following versions of the librairies:
 - os
 - openpyxl
 - numpy
+- seaborn
 
 
 #folder input:
@@ -50,3 +51,9 @@ Maximal intensity A is the mean of the 10 largest values reach in each well.
 To run the script, choose data file and datasheet in this file.
 Results are given in an Excel sheet in the output folder output/A/
 The output filename will have as name the name of the data file and the datasheet.
+
+#Clustering
+Cluster under the form of a heatmap using data from AUC or A folder.
+The output filename will have as name the name as the imput filename.
+
+#

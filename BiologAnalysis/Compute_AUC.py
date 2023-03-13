@@ -3,8 +3,7 @@ import pandas as pd
 import os as os
 
 
-filename = 'input/rsol.xlsx'
-#filename = 'input/rsol_time.xlsx'
+filename = 'input/rsol_time.xlsx'
 
 datasheet = 0 #WT
 #datasheet = 1 #PhcA
