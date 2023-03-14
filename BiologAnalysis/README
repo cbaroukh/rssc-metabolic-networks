@@ -1,13 +1,13 @@
 #BiologAnalysis folder
+This folder relates to analysis of Biolog experiments performed in Baroukh et al. 2023 (Please cite Baroukh et al. 2023 (https://doi.org/10.1101/2023.01.09.523232)
 
 Scripts were runned using python and the following versions of the librairies:
 - python 3.6
-- pandas
-- matplotlib
-- os
-- openpyxl
-- numpy
-- seaborn
+- pandas 1.1.5
+- matplotlib 3.0.2
+- openpyxl 2.5.9
+- numpy 1.19.5
+- seaborn 0.11.2
 
 
 #folder input:
@@ -63,4 +63,3 @@ The output filename is the same name as the input filename.
 #PCA
 Perform PCA analysis on data from AUC or A folder.
 The output filename is the same name as the input filename.
-
