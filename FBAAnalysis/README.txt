@@ -6,7 +6,6 @@ Scripts were runned using python and the following versions of the librairies:
 - python 3.6
 - pandas 1.1.5
 - openpyxl 2.5.9
-- numpy 1.19.5
 - cplex 12.8.0.0
 
 
@@ -19,8 +18,8 @@ Please not that GMI1000.tsv is the metabolic network of GMI1000 from Peyraud et 
 GMI1000_2.tsv is the metabolic network automatically reconstructed by meroom pipeline.
 
 #ouput folder
-- FBA : Flux Balance Analysis simulation results for a given strain
-- GDS : Gene Deletion Study simulation results for a given strain
+- FBA : Flux Balance Analysis simulation results for a given strain.
+- GDS : Gene Deletion Study simulation results for a given strain and an Excel file compiling results of all strains.
 - LP : .lp files containing LP optimization problem solved for FBA.
 - parsednetworks : .txt files containing all information of a given metabolic network such as the stoichiometric matrix, the metabolites ids and names, the reactions ids and names and reversibility, ...
 
@@ -32,6 +31,19 @@ Necessary to perform FBA or GDS.
 Perform Flux Balance Analysis on a given strain. Output files is an Excel file in output/FBA/
 The LP problem can be seen in .lp format in folder output/LP/
 Strain is to be chosen in parser_tsv.py with the variable strain_name.
+
+#GDS.py
+Perform Gene Deletion Study for a given strain. Output file is an Excel file in output/GDS/
+Strain is to be chosen in parser_tsv.py with the variable strain_name.
+Genes not names "RSXXXX" are ignored.
+Genes are assumed essential if FBA_status is different from 1 or FBA_status = 1 and FBA_value < 1E-5.
+
+#AnalyseGDS.py
+Compile all GDS results from all strains.
+This script functions only if GDS results were generated for all strains listed in list strains.
+Results are given by an Excel file compiling all results FBA values.
+Genes are assumed essential if FBA_status is different from 1 or FBA_status = 1 and FBA_value < 1E-5.
+
 
 
 

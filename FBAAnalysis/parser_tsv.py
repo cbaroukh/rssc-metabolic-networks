@@ -15,9 +15,9 @@ strain = 'UW551'
 
 strain = 'GMI1000'
 
-
 input_folder = 'input/FBAFunctionalMetabolicNetworks/RS'
 filename = input_folder + strain + '.tsv'
+
 
 output_folder = 'output/parsednetworks/'
 output_filename = output_folder + 'RS' + strain
@@ -77,9 +77,9 @@ for line in content:
         reactions_formulas.append(columns[2])
         reactions_formulasNames.append(columns[3])
         reactions_subsystem.append(columns[5])
-        reactions_protcomplex.append(columns[6])
+        reactions_protcomplex.append(columns[6].strip())
 
-        protcomplexes1 = columns[6]
+        protcomplexes1 = columns[6].strip()
         protcomplexes2 = protcomplexes1.split(' OR ')
         for protcomplexes3 in protcomplexes2:
             protcomplex = protcomplexes3.split(' AND ')
