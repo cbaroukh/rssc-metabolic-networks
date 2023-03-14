@@ -2,16 +2,18 @@
 #####input data
 
 strain = 'BA7'
-#strain = 'BDBR229'
-#strain = 'CFBP2957'
-#strain = 'GMI1000_2'
-#strain = 'K60'
-#strain = 'MOLK2'
-#strain = 'PSI07'
-#strain = 'PSS4'
-#strain = 'R24'
-#strain = 'RUN2340'
-#strain = 'UW551'
+strain = 'BDBR229'
+strain = 'CFBP2957'
+strain = 'GMI1000_2'
+strain = 'K60'
+strain = 'MOLK2'
+strain = 'PSI07'
+strain = 'PSS4'
+strain = 'R24'
+strain = 'RUN2340'
+strain = 'UW551'
+
+strain = 'GMI1000'
 
 
 input_folder = 'input/FBAFunctionalMetabolicNetworks/RS'
@@ -50,14 +52,8 @@ reactions_protcomplex = []
 reactions_subsystem = []
 reactions_formulas = []
 reactions_formulasNames = []
-reactions_type = []
-reactions_EC = []
 exchange_reactions = []
 Genes = {}
-
-reaction_gpr_status = []
-reactions_ref = []
-reactions_score = []
 
 
 
@@ -80,12 +76,10 @@ for line in content:
         reactions_name.append(columns[1])
         reactions_formulas.append(columns[2])
         reactions_formulasNames.append(columns[3])
-        reactions_subsystem.append(columns[6])
-        reactions_protcomplex.append(columns[7])
-        reactions_type.append(columns[5])
-        reactions_EC.append(columns[4])
+        reactions_subsystem.append(columns[5])
+        reactions_protcomplex.append(columns[6])
 
-        protcomplexes1 = columns[7]
+        protcomplexes1 = columns[6]
         protcomplexes2 = protcomplexes1.split(' OR ')
         for protcomplexes3 in protcomplexes2:
             protcomplex = protcomplexes3.split(' AND ')
@@ -115,10 +109,6 @@ for line in content:
             print(columns[2])
             print(columns[0])
             reactions_reversible.append(-1)
-
-        reaction_gpr_status.append(columns[8])
-        reactions_ref.append(columns[9])
-        reactions_score.append(columns[10][0:-1])
 
         reactionformula = columns[2]
         substrates = reactionformula.split(fleche)[0].split(' + ')

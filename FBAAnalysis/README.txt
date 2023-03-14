@@ -5,10 +5,9 @@ Please cite Baroukh et al. 2023 (https://doi.org/10.1101/2023.01.09.523232) if u
 Scripts were runned using python and the following versions of the librairies:
 - python 3.6
 - pandas 1.1.5
-- matplotlib 3.0.2
 - openpyxl 2.5.9
 - numpy 1.19.5
-- cplex
+- cplex 12.8.0.0
 
 
 #input folder
